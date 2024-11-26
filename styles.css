@@ -1,2 +1,81 @@
 
 /* Your CSS Code here. */
+/* Centering the button on the page */
+#open-modal {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#open-modal:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Styling the modal header */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    padding: 15px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling the modal body */
+.modal-body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Styling the modal footer */
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 2px solid #e9ecef;
+    padding: 10px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Add subtle shadows to the modal */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .modal-content {
+        border-radius: 0;
+    }
+
+    #open-modal {
+        width: 90%;
+        font-size: 16px;
+    }
+}
